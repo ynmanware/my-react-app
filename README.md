@@ -37,6 +37,10 @@ The Dockerfile for production contain two phases
 
 **Access application at http://locahost:8080**
 
+## create CI-CD pipeline with Travis and AWS 
+
+### create .travis.yml
+
 =========================================
 ### Following contents are part of the project created from command line, keeping it here for reference
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
