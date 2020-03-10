@@ -42,9 +42,34 @@ The Dockerfile for production contain two phases
 ### create .travis.yml 
 > note that .travis.yaml will result in `rake aborted!` error!
 
-### signup at travis-ci.com with github account
+### sign-up at travis-ci.com with github account
 Configure your github repository 
-Whenever you create a pull request and merge the branch to master, the build will be triggered
+Whenever you create a pull request and merge the branch to master, the build and deployment will be triggered
+
+> At this point, you can have everything in travis.yml except deploy tag and test the travis integration
+
+### create elasticbeanstalk application from AWS console
+**Select**
+   
+    - create environment
+    - web server env
+    - platform: docker
+    - sample application
+    
+> Elasticbean stalk add load balancer and scales the application if required
+> You will get an url something like http://myreactapp-env.eba-cp392jbp.ap-southeast-2.elasticbeanstalk.com/
+
+### create IAM user 
+ - should have a policy having full access to ElasticBeanStalk
+> note down use access key and secret key
+
+### create environment variables from Travis settings
+ - use these variables in .travis.yml 
+
+Here you should be able to see your application 
+> http://myreactapp-env.eba-cp392jbp.ap-southeast-2.elasticbeanstalk.com/
+
+
 
 =========================================
 ### Following contents are part of the project created from command line, keeping it here for reference
