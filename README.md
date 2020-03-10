@@ -39,7 +39,12 @@ The Dockerfile for production contain two phases
 
 ## create CI-CD pipeline with Travis and AWS 
 
-### create .travis.yml
+### create .travis.yml 
+> note that .travis.yaml will result in `rake aborted!` error!
+
+### signup at travis-ci.com with github account
+Configure your github repository 
+Whenever you create a pull request and merge the branch to master, the build will be triggered
 
 =========================================
 ### Following contents are part of the project created from command line, keeping it here for reference
