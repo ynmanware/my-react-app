@@ -1,4 +1,4 @@
-# React App + Ddocker-compose
+# React App + NGINX + Docker-compose + CI/CD pipeline (Travis and Github) + AWS ElasticBeanStalk
 
 ### create react application using following command 
 
