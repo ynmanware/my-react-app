@@ -17,8 +17,8 @@ deploy:
   edge: true
   provider: elasticbeanstalk
   region: "ap-southeast-2"
-  app: "yn-react-app"
-  env: "YnReactApp-env"
+  app: "my-react-app"
+  env: "MyReactApp-env"
   bucket_name: "elasticbeanstalk-ap-southeast-2-782026352736"
   bucket_path: "my-react-app"
   on:
