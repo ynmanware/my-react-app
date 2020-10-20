@@ -48,7 +48,7 @@ Whenever you create a pull request and merge the branch to master, the build and
 
 > At this point, you can have everything in travis.yml except deploy tag and test the travis integration
 
-### create elasticbeanstalk application from AWS console
+### create Elastic Beanstalk application from AWS console
 **Select**
    
     - create environment
@@ -56,7 +56,7 @@ Whenever you create a pull request and merge the branch to master, the build and
     - platform: docker
     - sample application
     
-> Elasticbean stalk add load balancer and scales the application if required
+> Elastic Beanstalk add load balancer and scales the application if required
 > You will get an url something like http://myreactapp-env.eba-cp392jbp.ap-southeast-2.elasticbeanstalk.com/
 
 ### create IAM user 
@@ -69,6 +69,12 @@ Whenever you create a pull request and merge the branch to master, the build and
 Here you should be able to see your application 
 > http://myreactapp-env.eba-cp392jbp.ap-southeast-2.elasticbeanstalk.com/
 
+### Delete AWS resources 
+- navigate to Elastic Beanstalk and delete the application
+
+### To redeploy the application 
+ - create Elastic Beanstalk 
+ - update relevant variables under deploy section from AWS console 
 
 
 =========================================
